@@ -2,7 +2,10 @@
   box-sizing: border-box; }
 
 body {
-  font-family: "HelveticaRegular", Helvetica, Arial;
+  font-family: Muli, sans-serif;
+  font-size: 18px;
+  font-family: Muli, sans-serif;
+  color: #2F2E2E;
   margin: 0; }
 
 .container {
@@ -27,7 +30,7 @@ header {
   header .fa {
     font-size: 0.7rem; }
 
-.icon-main-menu {
+.icon-header {
   display: inline-block;
   padding-left: 11px;
   vertical-align: bottom;
@@ -35,15 +38,14 @@ header {
 
 .main-menu ul {
   display: inline-block;
-  font-family: "Old Standard TT", serif;
-  padding-left: 62px; }
+  font-family: "Old Standard TT", serif; }
   .main-menu ul li {
     display: inline-block; }
     .main-menu ul li a {
       text-decoration: none;
       color: #2F2E2E;
       font-size: 1.1rem;
-      padding: 12px; }
+      padding: 5px; }
       .main-menu ul li a:hover {
         color: grey; }
 
@@ -88,35 +90,75 @@ header {
 #video-container {
   position: relative;
   text-align: center;
-  width: 100%;
-  height: 800px;
-  overflow: hidden; }
+  width: 100%; }
   #video-container video {
-    width: 100%; }
+    width: 100%;
+    display: block; }
   #video-container .title {
     position: absolute;
-    top: 0%;
+    top: 0;
     color: white;
     text-transform: uppercase;
     font-family: "Old Standard TT", serif;
     font-size: 4vw; }
+  #video-container .double-line {
+    position: absolute;
+    top: 0;
+    border-color: white; }
+
+.double-line {
+  border-top: 2px solid #2F2E2E;
+  border-bottom: 2px solid #2F2E2E;
+  height: 10px;
+  width: 40px; }
+
+h1,
+p {
+  color: #2F2E2E; }
+
+h1 {
+  font-family: "Old Standard TT", serif;
+  font-weight: 100; }
 
 @media screen and (min-width: 768px) {
   .icons {
     display: inline-block;
     float: right; }
 
-  #video-container .title {
-    font-size: 3vw; }
+  #video-container {
+    max-height: 850px;
+    overflow: hidden; }
+    #video-container .title {
+      font-size: 3vw; }
 
   .main-menu button.menu {
     display: none; }
 
   .small-menu .small-menu--menu {
-    display: none; } }
+    display: none; }
+
+  .information {
+    width: 50%;
+    max-width: 512px;
+    padding: 0 30px;
+    display: inline-block;
+    vertical-align: middle; }
+
+  .chef-img {
+    background-image: url("https://static.wixstatic.com/media/e1c78c_a5a164acd00a4ae7940be550e4915303.jpg/v1/fill/w_1066,h_682,al_c,q_85,usm_0.66_1.00_0.01/e1c78c_a5a164acd00a4ae7940be550e4915303.webp");
+    width: 50%;
+    background-size: cover;
+    background-position: 90%;
+    height: 600px;
+    display: inline-block;
+    vertical-align: middle; } }
 @media screen and (min-width: 600px) {
   .main-menu .menu {
     display: inline-block; }
+  .main-menu ul {
+    padding-left: 62px; }
+    .main-menu ul li a {
+      padding: 12px; }
 
   .small-menu .small-menu--menu {
     display: none; } }
