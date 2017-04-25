@@ -222,7 +222,11 @@ h1 {
 
 .second-menu {
   text-align: center;
-  padding: 0 $common-padding/2;
+
+
+  .second-menu-information {
+    padding: 0 $common-padding/2;
+  }
 
     .double-line {
       margin: $common-padding/2 auto;
@@ -243,7 +247,12 @@ h1 {
       padding: $common-padding/3 $common-padding;
       margin: $common-padding/2 0;
     }
+}
 
+.second-menu-img {
+  background-image: url("https://static.wixstatic.com/media/e1c78c_cfd8fa1d16904a849e8f86d8e3bb3829.jpg/v1/fill/w_320,h_267,al_c,q_80,usm_0.66_1.00_0.01/e1c78c_cfd8fa1d16904a849e8f86d8e3bb3829.webp");
+  background-size: cover;
+  height: 300px;
 }
 
 @media screen and (min-width: 769px) {
