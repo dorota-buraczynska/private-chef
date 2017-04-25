@@ -18,10 +18,11 @@ body {
 .container {
   max-width: $container-width;
   margin: auto;
+  margin-bottom: 18px;
 }
 
 .container-main-menu {
-  margin-bottom: 30px;
+  margin-bottom: 5px;
   margin-top: 30px;
 }
 
@@ -56,13 +57,14 @@ header {
   ul {
     display: inline-block;
     font-family: $additional-font-family;
+    margin-bottom: 0;
     li {
       display: inline-block;
       a {
         text-decoration: none;
         color: $text-color;
-        font-size: 1.1rem;
-        padding: 5px;
+        font-size: 1rem;
+        padding: 3px;
         &:hover {
           color: $active-color;
         }
@@ -79,7 +81,6 @@ header {
     border-radius: 3px;
     background: none;
     padding: 8px 13px;
-    margin-top: 7px;
     margin-right: 15px;
   }
 }
@@ -167,7 +168,43 @@ h1 {
   font-weight: 100;
 }
 
+.chef-img {
+  background-image: url("https://static.wixstatic.com/media/e1c78c_a5a164acd00a4ae7940be550e4915303.jpg/v1/fill/w_1066,h_682,al_c,q_85,usm_0.66_1.00_0.01/e1c78c_a5a164acd00a4ae7940be550e4915303.webp");
+  height: 200px;
+  background-size: cover;
+}
+
+.information {
+  font-size: 0.9rem;
+  padding: 20px;
+  p {
+    padding-top: 15px;
+  }
+}
+
+
+
+@media screen and (min-width: 768px)and (max-width: 853px){
+  .menu-information {
+    font-size: 1.9vw;
+  }
+}
+
 @media screen and (min-width: 768px) {
+
+.main-menu {
+  .menu {
+    display: inline-block;
+  }
+  ul {
+    padding-left: 62px;
+    li {
+      a {
+        padding: 12px;
+      }
+    }
+  }
+}
   .icons {
     display: inline-block;
     float: right;
@@ -184,18 +221,34 @@ h1 {
     button.menu {
       display: none;
     }
+    .small-menu {
+      border-color: transparent;
+    }
   }
   .small-menu {
-    .small-menu--menu {
+    .small-menu--menu,
+    .small-menu--icons {
       display: none;
     }
   }
+  .container-main-menu {
+    margin-bottom: 30px;
+  }
+  .restaurant-menu {
+    .container {
+
+      padding-top: 90px;
+    }
+  }
+  .information-container {
+    height: 600px;
+  }
   .information {
+    font-size: 1.2rem;
     width: 50%;
     max-width: 512px;
-    padding: 0 30px;
+    padding: 100px 0 0 60px;
     display: inline-block;
-    vertical-align: middle;
   }
   .chef-img {
     background-image: url("https://static.wixstatic.com/media/e1c78c_a5a164acd00a4ae7940be550e4915303.jpg/v1/fill/w_1066,h_682,al_c,q_85,usm_0.66_1.00_0.01/e1c78c_a5a164acd00a4ae7940be550e4915303.webp");
@@ -204,12 +257,46 @@ h1 {
     background-position: 90%;
     height: 600px;
     display: inline-block;
-    vertical-align: middle;
-
+    float: left;
+  }
+  .restaurant-menu {
+    background-image: url("https://static.wixstatic.com/media/e1c78c_823b4e996eb74e60b4505f1dc7b725f3.jpg/v1/fill/w_1863,h_828,al_c,q_85,usm_0.66_1.00_0.01/e1c78c_823b4e996eb74e60b4505f1dc7b725f3.webp");
+    background-size: cover;
+    height: 800px;
+    width: 100%;
+  }
+  .menus {
+    text-align: center;
+  }
+  .menu-information {
+    display: inline-block;
+    background-color: white;
+    width: 30%;
+    text-align: center;
+    margin: 11px;
+    img {
+      height: 185px;
+    }
+    a {
+      text-decoration: none;
+      color: $text-color;
+    }
+    .double-line {
+      margin: auto;
+    }
+    h1 {
+      padding: 0 60px 0 60px;
+    }
+    p {
+      padding-top: 30px;
+    }
+  }
+  .menu-img {
+    padding-top: 60px;
   }
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 600px) and (max-width: 768px) {
   .main-menu {
     .menu {
       display: inline-block;
@@ -228,5 +315,56 @@ h1 {
       display: none;
     }
   }
+  .main-menu {
+    button.menu {
+      margin-top: 7px;
+    }
+  }
+  .container {
+    margin-bottom: 0;
+  }
+  .container-main-menu {
+    margin-bottom: 30px;
+  }
+  .chef-img {
+    background-image: url("https://static.wixstatic.com/media/e1c78c_a5a164acd00a4ae7940be550e4915303.jpg/v1/fill/w_1066,h_682,al_c,q_85,usm_0.66_1.00_0.01/e1c78c_a5a164acd00a4ae7940be550e4915303.webp");
+    height: 330px;
+    background-size: cover;
+  }
 
+  .information {
+    font-size: 1.2rem;
+    padding: 30px;
+    p {
+      padding-top: 30px;
+    }
+  }
+  .menus {
+    text-align: center;
+  }
+  .menu-information {
+    padding: 0 90px;
+    margin: 10px;
+    border-bottom: 1px solid $text-color;
+    .double-line {
+      margin: auto;
+    }
+    a {
+      text-decoration: none;
+      color: $text-color;
+    }
+  }
+  .menu-img {
+    padding-top: 30px;
+  }
+}
+
+@media screen and (min-width: 440px) and (max-width: 600px) {
+  .chef-img {
+    background-image: url("https://static.wixstatic.com/media/e1c78c_a5a164acd00a4ae7940be550e4915303.jpg/v1/fill/w_1066,h_682,al_c,q_85,usm_0.66_1.00_0.01/e1c78c_a5a164acd00a4ae7940be550e4915303.webp");
+    height: 280px;
+    background-size: cover;
+  }
+  .information {
+  }
 }
