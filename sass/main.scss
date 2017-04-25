@@ -211,7 +211,7 @@ h1 {
   background-size: cover;
 }
 
-.information {
+.about {
   font-size: 0.9rem;
   padding: $common-padding/2;
 
@@ -220,13 +220,33 @@ h1 {
   }
 }
 
-//@media screen and (min-width: 768px)and (max-width: 853px){
-//  .menu-information {
-//    font-size: 1.1rem;
-//  }
-//}
+.second-menu {
+  text-align: center;
+  padding: 0 $common-padding/2;
 
-@media screen and (min-width: 768px) {
+    .double-line {
+      margin: $common-padding/2 auto;
+    }
+
+    h2 {
+      margin: $common-padding 0 0 0;
+    }
+
+    p {
+      font-size: 1rem;
+      margin: $common-padding/6;
+    }
+
+    button {
+      border: 1px solid $text-color;
+      background: none;
+      padding: $common-padding/3 $common-padding;
+      margin: $common-padding/2 0;
+    }
+
+}
+
+@media screen and (min-width: 769px) {
 
   .main-menu {
 
@@ -283,17 +303,17 @@ h1 {
     margin-bottom: $common-padding;
   }
 
-  .restaurant-menu {
+  .restaurant-menus {
     .container {
       padding-top: $common-padding*3;
     }
   }
 
-  .information-container {
+  .about-container {
     height: 600px;
   }
 
-  .information {
+  .about {
     font-size: 1.2rem;
     width: 50%;
     max-width: 512px;
@@ -311,7 +331,7 @@ h1 {
     float: left;
   }
 
-  .restaurant-menu {
+  .restaurant-menus {
     background-image: url("https://static.wixstatic.com/media/e1c78c_823b4e996eb74e60b4505f1dc7b725f3.jpg/v1/fill/w_1863,h_828,al_c,q_85,usm_0.66_1.00_0.01/e1c78c_823b4e996eb74e60b4505f1dc7b725f3.webp");
     background-size: cover;
     height: 800px;
@@ -344,7 +364,7 @@ h1 {
       margin: auto;
     }
 
-    h2:last-child {
+    h3:last-child {
       padding: 0 $common-padding*2;
     }
 
@@ -356,9 +376,49 @@ h1 {
   .menu-img {
     padding-top: $common-padding*2;
   }
+
+  .second-menu {
+    background-image: url("https://static.wixstatic.com/media/e1c78c_cfd8fa1d16904a849e8f86d8e3bb3829.jpg/v1/fill/w_1863,h_867,al_c,q_85,usm_0.66_1.00_0.01/e1c78c_cfd8fa1d16904a849e8f86d8e3bb3829.webp");
+    text-align: center;
+    overflow: hidden;
+    padding-top: $common-padding*3;
+
+    & .container {
+      width: $container-width/2;
+    }
+
+    button {
+      background: none;
+      border: 1px solid $text-color;
+      padding: $common-padding/2 $common-padding;
+      margin: $common-padding*2 0;
+    }
+    .second-menu-information {
+      background-color: white;
+
+      h2 {
+        padding-top: $common-padding*3;
+        font-size: 2.2rem;
+      }
+      p {
+        margin: $common-padding/6;
+        font-size: 1rem;
+      }
+      h3 {
+        padding: 0 $common-padding*3;
+      }
+    }
+    .double-line {
+      margin: $common-padding auto;
+    }
+
+    .second-menu-img {
+      display: none;
+    }
+  }
 }
 
-@media screen and (min-width: 600px) and (max-width: 768px) {
+@media screen and (min-width: 601px) and (max-width: 768px) {
   .main-menu {
     .menu {
       display: inline-block;
@@ -402,7 +462,7 @@ h1 {
     background-size: cover;
   }
 
-  .information {
+  .about {
     font-size: 1.2rem;
     padding: $common-padding;
 
@@ -434,6 +494,33 @@ h1 {
   .menu-img {
     padding-top: $common-padding;
   }
+
+  .second-menu {
+    text-align: center;
+
+    button {
+      background: none;
+      border: 1px solid $text-color;
+      padding: $common-padding/2 $common-padding;
+      margin: $common-padding 0;
+    }
+
+    .double-line {
+      margin: $common-padding auto;
+    }
+
+    .second-menu-information {
+      p {
+        font-size: 0.9rem;
+        margin: $common-padding/6;
+      }
+    }
+  }
+  .second-menu-img {
+    background-image: url("https://static.wixstatic.com/media/e1c78c_cfd8fa1d16904a849e8f86d8e3bb3829.jpg/v1/fill/w_980,h_867,al_c,q_85,usm_0.66_1.00_0.01/e1c78c_cfd8fa1d16904a849e8f86d8e3bb3829.webp");
+    background-size: cover;
+    height: 500px;
+  }
 }
 
 @media screen and (min-width: 440px) and (max-width: 600px) {
@@ -447,4 +534,5 @@ h1 {
     border-bottom: 1px solid $text-color;
     font-size: 1.2rem;
   }
+
 }
