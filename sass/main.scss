@@ -601,13 +601,13 @@ img.quotation {
       font-size: 1rem;
       padding: 6px;
       margin-top: 0;
-      margin-left: calc(50% + 208px);
+      margin-left: calc(50% + 239px);
     }
 
     input[type=text],
     input[type=email],
     textarea {
-      width: inherit;
+      width: 580px;
     }
   }
 
@@ -769,7 +769,7 @@ img.quotation {
     input[type=text],
     input[type=email],
     textarea {
-      width: inherit;
+      width: 580px;
     }
   }
 }

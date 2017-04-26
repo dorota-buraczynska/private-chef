@@ -398,11 +398,11 @@ img.quotation {
     font-size: 1rem;
     padding: 6px;
     margin-top: 0;
-    margin-left: calc(50% + 208px); }
+    margin-left: calc(50% + 239px); }
   #personal-details input[type=text],
   #personal-details input[type=email],
   #personal-details textarea {
-    width: inherit; } }
+    width: 580px; } }
 @media screen and (min-width: 601px) and (max-width: 768px) {
   .main-menu .menu {
     display: inline-block; }
@@ -502,7 +502,7 @@ img.quotation {
   #personal-details input[type=text],
   #personal-details input[type=email],
   #personal-details textarea {
-    width: inherit; } }
+    width: 580px; } }
 @media screen and (min-width: 440px) and (max-width: 600px) {
   .chef-img {
     background-image: url("https://static.wixstatic.com/media/e1c78c_a5a164acd00a4ae7940be550e4915303.jpg/v1/fill/w_1066,h_682,al_c,q_85,usm_0.66_1.00_0.01/e1c78c_a5a164acd00a4ae7940be550e4915303.webp");
