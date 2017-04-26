@@ -167,6 +167,25 @@ h1 {
   background-size: cover;
   height: 300px; }
 
+.review {
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 15px; }
+  .review h2, .review p {
+    font-family: "Old Standard TT", serif;
+    font-weight: normal;
+    margin: 3px; }
+
+img.round-face {
+  border-radius: 50%;
+  padding: 10px;
+  border: 1px solid grey;
+  margin: 15px; }
+
+img.quotation {
+  width: 50px;
+  margin: 30px; }
+
 @media screen and (min-width: 769px) {
   .main-menu .menu {
     display: inline-block; }
@@ -198,7 +217,7 @@ h1 {
     margin-bottom: 30px; }
 
   .restaurant-menus .container {
-    padding-top: 90px; }
+    padding-top: 120px; }
 
   .about-container {
     height: 600px; }
@@ -255,7 +274,8 @@ h1 {
     background-image: url("https://static.wixstatic.com/media/e1c78c_cfd8fa1d16904a849e8f86d8e3bb3829.jpg/v1/fill/w_1863,h_867,al_c,q_85,usm_0.66_1.00_0.01/e1c78c_cfd8fa1d16904a849e8f86d8e3bb3829.webp");
     text-align: center;
     overflow: hidden;
-    padding-top: 90px; }
+    padding-top: 120px;
+    height: 867px; }
     .second-menu .container {
       width: 475px; }
     .second-menu button {
@@ -276,7 +296,30 @@ h1 {
     .second-menu .double-line {
       margin: 30px auto; }
     .second-menu .second-menu-img {
-      display: none; } }
+      display: none; }
+
+  .review {
+    background-image: url("https://static.wixstatic.com/media/e1c78c_6ae16d26be03488a93c6c91e40313df7.jpg/v1/fill/w_1863,h_740,al_c,q_85,usm_0.66_1.00_0.01/e1c78c_6ae16d26be03488a93c6c91e40313df7.webp");
+    height: 740px;
+    text-align: center;
+    font-size: 1.5rem; }
+    .review .container {
+      padding-top: 180px; }
+    .review p {
+      font-size: 1rem; }
+    .review h2, .review p {
+      font-family: "Old Standard TT", serif;
+      font-weight: normal;
+      margin: 3px; }
+
+  img.round-face {
+    border-radius: 50%;
+    border: 1px solid grey;
+    padding: 10px;
+    margin: 30px; }
+
+  img.quotation {
+    margin-bottom: 30px; } }
 @media screen and (min-width: 601px) and (max-width: 768px) {
   .main-menu .menu {
     display: inline-block; }

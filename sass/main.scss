@@ -223,36 +223,61 @@ h1 {
 .second-menu {
   text-align: center;
 
-
   .second-menu-information {
     padding: 0 $common-padding/2;
   }
 
-    .double-line {
-      margin: $common-padding/2 auto;
-    }
+  .double-line {
+    margin: $common-padding/2 auto;
+  }
 
-    h2 {
-      margin: $common-padding 0 0 0;
-    }
+  h2 {
+    margin: $common-padding 0 0 0;
+  }
 
-    p {
-      font-size: 1rem;
-      margin: $common-padding/6;
-    }
+  p {
+    font-size: 1rem;
+    margin: $common-padding/6;
+  }
 
-    button {
-      border: 1px solid $text-color;
-      background: none;
-      padding: $common-padding/3 $common-padding;
-      margin: $common-padding/2 0;
-    }
+  button {
+    border: 1px solid $text-color;
+    background: none;
+    padding: $common-padding/3 $common-padding;
+    margin: $common-padding/2 0;
+  }
 }
 
 .second-menu-img {
   background-image: url("https://static.wixstatic.com/media/e1c78c_cfd8fa1d16904a849e8f86d8e3bb3829.jpg/v1/fill/w_320,h_267,al_c,q_80,usm_0.66_1.00_0.01/e1c78c_cfd8fa1d16904a849e8f86d8e3bb3829.webp");
   background-size: cover;
   height: 300px;
+}
+
+.review {
+  text-align: center;
+  font-size: 1.2rem;
+  padding: $common-padding/2;
+
+  h2, p {
+    font: {
+      family: $additional-font-family;
+      weight: normal;
+    }
+    margin: $common-padding/10;
+  }
+}
+
+img.round-face {
+  border-radius: 50%;
+  padding: 10px;
+  border: 1px solid $active-color;
+  margin: $common-padding/2;
+}
+
+img.quotation {
+  width: 50px;
+  margin: $common-padding;
 }
 
 @media screen and (min-width: 769px) {
@@ -314,7 +339,7 @@ h1 {
 
   .restaurant-menus {
     .container {
-      padding-top: $common-padding*3;
+      padding-top: $common-padding*4;
     }
   }
 
@@ -390,7 +415,8 @@ h1 {
     background-image: url("https://static.wixstatic.com/media/e1c78c_cfd8fa1d16904a849e8f86d8e3bb3829.jpg/v1/fill/w_1863,h_867,al_c,q_85,usm_0.66_1.00_0.01/e1c78c_cfd8fa1d16904a849e8f86d8e3bb3829.webp");
     text-align: center;
     overflow: hidden;
-    padding-top: $common-padding*3;
+    padding-top: $common-padding*4;
+    height: 867px;
 
     & .container {
       width: $container-width/2;
@@ -424,6 +450,38 @@ h1 {
     .second-menu-img {
       display: none;
     }
+  }
+
+  .review {
+    background-image: url("https://static.wixstatic.com/media/e1c78c_6ae16d26be03488a93c6c91e40313df7.jpg/v1/fill/w_1863,h_740,al_c,q_85,usm_0.66_1.00_0.01/e1c78c_6ae16d26be03488a93c6c91e40313df7.webp");
+    height: 740px;
+    text-align: center;
+    font-size: 1.5rem;
+
+    & .container {
+      padding-top: $common-padding*6;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+    h2, p {
+      font: {
+        family: $additional-font-family;
+        weight: normal;
+      }
+      margin: $common-padding/10;
+    }
+  }
+
+  img.round-face {
+    border-radius: 50%;
+    border: 1px solid $active-color;
+    padding: 10px;
+    margin: $common-padding;
+  }
+  img.quotation {
+    margin-bottom: $common-padding;
   }
 }
 
