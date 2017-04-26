@@ -86,6 +86,27 @@ header {
       color: #2F2E2E;
       padding: 10px; }
 
+.title-container {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%; }
+  .title-container .title {
+    color: white;
+    font-family: "Old Standard TT", serif;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    .title-container .title .double-line {
+      border-color: white;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-top: 15px; }
+
 .menus {
   text-align: center; }
 
@@ -108,17 +129,6 @@ header {
   #video-container video {
     width: 100%;
     display: block; }
-  #video-container .title {
-    position: absolute;
-    top: 0;
-    color: white;
-    text-transform: uppercase;
-    font-family: "Old Standard TT", serif;
-    font-size: 4vw; }
-  #video-container .double-line {
-    position: absolute;
-    top: 0;
-    border-color: white; }
 
 .double-line {
   border-top: 2px solid #2F2E2E;
@@ -233,9 +243,11 @@ img.quotation {
 
   #video-container {
     max-height: 850px;
-    overflow: hidden; }
-    #video-container .title {
-      font-size: 3vw; }
+    overflow: hidden;
+    position: relative; }
+
+  .title-container .title {
+    font-size: 2.5rem; }
 
   .main-menu button.menu {
     display: none; }
@@ -402,7 +414,10 @@ img.quotation {
   #personal-details input[type=text],
   #personal-details input[type=email],
   #personal-details textarea {
-    width: 580px; } }
+    width: 580px; }
+
+  .bx-wrapper {
+    border: none; } }
 @media screen and (min-width: 601px) and (max-width: 768px) {
   .main-menu .menu {
     display: inline-block; }
@@ -422,6 +437,9 @@ img.quotation {
 
   .container-main-menu {
     margin-bottom: 30px; }
+
+  .title-container .title {
+    font-size: 1.8rem; }
 
   .chef-img {
     background-image: url("https://static.wixstatic.com/media/e1c78c_a5a164acd00a4ae7940be550e4915303.jpg/v1/fill/w_1066,h_682,al_c,q_85,usm_0.66_1.00_0.01/e1c78c_a5a164acd00a4ae7940be550e4915303.webp");
@@ -512,6 +530,9 @@ img.quotation {
   .menu-information {
     border-bottom: 1px solid #2F2E2E;
     font-size: 1.2rem; }
+
+  .title-container .title {
+    font-size: 1.5rem; }
 
   #personal-details input[type=text],
   #personal-details input[type=email],
