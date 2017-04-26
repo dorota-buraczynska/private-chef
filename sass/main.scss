@@ -280,6 +280,57 @@ img.quotation {
   margin: $common-padding;
 }
 
+.review-image {
+  img {
+    width: 100%;
+  }
+}
+
+.contact {
+  text-align: center;
+  padding: $common-padding/2;
+
+  .double-line {
+    margin: $common-padding auto;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+  h3 {
+    font-size: 1.1rem;
+    padding: 0 $common-padding*2;
+  }
+}
+
+#personal-details {
+  input,
+  textarea {
+    display: block;
+    margin: $common-padding/5 auto;
+    padding: $common-padding/10;
+  }
+
+  textarea {
+    padding-right: $common-padding;
+  }
+
+  button {
+    background-color: black;
+    border: none;
+    color: white;
+    font-size: 0.9rem;
+    padding: 6px;
+    margin-top: 0;
+  }
+
+  input[type=text],
+  input[type=email],
+  textarea {
+    width: 300px;
+  }
+}
+
 @media screen and (min-width: 769px) {
 
   .main-menu {
@@ -459,7 +510,7 @@ img.quotation {
     font-size: 1.5rem;
 
     & .container {
-      padding-top: $common-padding*6;
+      padding-top: $common-padding*4;
     }
 
     p {
@@ -483,6 +534,83 @@ img.quotation {
   img.quotation {
     margin-bottom: $common-padding;
   }
+
+  .review-image {
+    background-image: url("https://static.wixstatic.com/media/e1c78c_ad1edc17f4e041b79ef0aa996a3b4792.jpg/v1/fill/w_1863,h_666,al_c,q_85,usm_0.66_1.00_0.01/e1c78c_ad1edc17f4e041b79ef0aa996a3b4792.webp");
+    height: 664px;
+
+    img {
+      display: none;
+    }
+  }
+
+  .contact {
+    text-align: center;
+    font-family: $additional-font-family;
+    padding: $common-padding/2;
+    margin-top: $common-padding*4;
+    margin-bottom: $common-padding*4;
+
+    .double-line {
+      margin: $common-padding auto;
+    }
+
+    h2 {
+      font: {
+        size: 3.3rem;
+        weight: normal;
+      }
+      margin: 0;
+    }
+
+    p {
+      font: {
+        size: 1rem;
+        family: $main-font-family;
+      }
+    }
+
+    h3 {
+      font-weight: normal;
+      padding: 0 $common-padding*6;
+      margin-bottom: $common-padding;
+    }
+  }
+
+  #personal-details {
+    input,
+    textarea,
+    button {
+      display: block;
+      margin: $common-padding/5 auto;
+      padding: $common-padding/10;
+      font-size: 1.2rem;
+      border: 1px solid $text-color;
+    }
+
+    ::placeholder {
+      color: lightgrey;
+    }
+    textarea {
+      padding-right: $common-padding/5;
+    }
+
+    button {
+      background-color: black;
+      color: white;
+      font-size: 1rem;
+      padding: 6px;
+      margin-top: 0;
+      margin-left: calc(50% + 208px);
+    }
+
+    input[type=text],
+    input[type=email],
+    textarea {
+      width: inherit;
+    }
+  }
+
 }
 
 @media screen and (min-width: 601px) and (max-width: 768px) {
@@ -588,6 +716,62 @@ img.quotation {
     background-size: cover;
     height: 500px;
   }
+
+  .review-image {
+    img {
+      width: 100%;
+    }
+  }
+
+  .contact {
+    text-align: center;
+    margin: $common-padding 0;
+
+    .double-line {
+      margin: $common-padding auto;
+    }
+
+    p {
+      font-size: 0.9rem;
+    }
+
+    h3 {
+      padding: 0 $common-padding*3;
+      font-size: 1.1rem;
+    }
+  }
+
+  #personal-details {
+    input,
+    textarea {
+      display: block;
+      margin: $common-padding/5 auto;
+      padding: $common-padding/10;
+    }
+
+    textarea {
+      padding-right: $common-padding;
+    }
+
+    ::placeholder {
+      color: lightgrey;
+    }
+
+    button {
+      background-color: black;
+      border: none;
+      color: white;
+      font-size: 0.9rem;
+      padding: 6px;
+      margin-top: 0;
+    }
+
+    input[type=text],
+    input[type=email],
+    textarea {
+      width: inherit;
+    }
+  }
 }
 
 @media screen and (min-width: 440px) and (max-width: 600px) {
@@ -602,4 +786,11 @@ img.quotation {
     font-size: 1.2rem;
   }
 
+  #personal-details {
+    input[type=text],
+    input[type=email],
+    textarea {
+      width: 340px;
+    }
+  }
 }
