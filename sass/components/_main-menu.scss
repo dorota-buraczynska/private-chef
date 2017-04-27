@@ -43,6 +43,38 @@ header {
 
 .main-menu {
   .menu {
+    display: none;
+  }
+
+  button.menu {
+    @media screen and (min-width: $screen-large + 1) {
+      display: none;
+    }
+    @media screen and (min-width: $screen-medium + 1) and (max-width: $screen-large) {
+      margin-top: $common-padding/3;
+    }
+    display: inline-block;
+    float: right;
+    border: 1px solid $text-color;
+    border-radius: 3px;
+    background: none;
+    padding: $common-padding/3 $common-padding/2;
+    margin-right: $common-padding/2;
+  }
+
+  .small-menu {
+    @media screen and (min-width: $screen-large + 1) {
+      border-color: transparent;
+    }
+    text-align: right;
+    margin-right: $common-padding/2;
+    margin-top: $common-padding/2;
+    border-top: 1px solid $text-color;
+  }
+}
+
+.main-menu {
+  .menu {
     @media screen and (min-width: $screen-large + 1), screen and (min-width: $screen-medium + 1) and (max-width: $screen-large){
       display: inline-block;
     }
@@ -80,37 +112,7 @@ header {
   }
 }
 
-.main-menu {
-  .menu {
-    display: none;
-  }
 
-  button.menu {
-    @media screen and (min-width: $screen-large + 1) {
-      display: none;
-    }
-    @media screen and (min-width: $screen-medium + 1) and (max-width: $screen-large) {
-      margin-top: $common-padding/3;
-    }
-    display: inline-block;
-    float: right;
-    border: 1px solid $text-color;
-    border-radius: 3px;
-    background: none;
-    padding: $common-padding/3 $common-padding/2;
-    margin-right: $common-padding/2;
-  }
-
-  .small-menu {
-    @media screen and (min-width: $screen-large + 1) {
-      border-color: transparent;
-    }
-    text-align: right;
-    margin-right: $common-padding/2;
-    margin-top: $common-padding/2;
-    border-top: 1px solid $text-color;
-  }
-}
 
 .small-menu {
   .small-menu--menu {

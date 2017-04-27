@@ -38,15 +38,15 @@
 .video-container {
   @media screen and (min-width: $screen-large + 1) {
     max-height: 850px;
-    overflow: hidden;
-    position: relative;
   }
   position: relative;
   text-align: center;
   width: 100%;
+  overflow: hidden;
 
   video {
     width: 100%;
     display: block;
+    position: relative;
   }
 }

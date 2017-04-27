@@ -27,3 +27,12 @@ $('.slider').slick({
     ]
 
 });
+
+var parallax = function () {
+  var scrolled = $(window).scrollTop();
+  $('video').css('top', (scrolled * .5) + 'px');
+};
+
+$(window).scroll(function (e) {
+    parallax();
+});

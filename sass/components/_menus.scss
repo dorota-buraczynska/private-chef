@@ -24,10 +24,8 @@
     font-size: 1.2rem;
     padding: 0 $common-padding*3;
     margin: $common-padding/3;
-    border-bottom: 1px solid $text-color;
   }
   @media screen and (min-width: $screen-small) and (max-width: $screen-medium) {
-    border-bottom: 1px solid $text-color;
     font-size: 1.2rem;
   }
   font-size: 0.9rem;
@@ -71,10 +69,12 @@
 .second-menu {
   @media screen and (min-width: $screen-large + 1) {
     background-image: url("https://static.wixstatic.com/media/e1c78c_cfd8fa1d16904a849e8f86d8e3bb3829.jpg/v1/fill/w_1863,h_867,al_c,q_85,usm_0.66_1.00_0.01/e1c78c_cfd8fa1d16904a849e8f86d8e3bb3829.jpg");
-    text-align: center;
     overflow: hidden;
     padding-top: $common-padding*4;
     height: 867px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
   }
   text-align: center;
 
@@ -132,13 +132,11 @@
   button {
     @media screen and (min-width: $screen-large + 1) {
       background: none;
-      border: 1px solid $text-color;
       padding: $common-padding/2 $common-padding;
       margin: $common-padding*2 0;
     }
     @media screen and (min-width: $screen-medium + 1) and (max-width: $screen-large) {
       background: none;
-      border: 1px solid $text-color;
       padding: $common-padding/2 $common-padding;
       margin: $common-padding 0;
     }
@@ -157,16 +155,21 @@
     background-image: url("https://static.wixstatic.com/media/e1c78c_cfd8fa1d16904a849e8f86d8e3bb3829.jpg/v1/fill/w_980,h_867,al_c,q_85,usm_0.66_1.00_0.01/e1c78c_cfd8fa1d16904a849e8f86d8e3bb3829.jpg");
     background-size: cover;
     height: 500px;
+    background-attachment: fixed;
   }
   background-image: url("https://static.wixstatic.com/media/e1c78c_cfd8fa1d16904a849e8f86d8e3bb3829.jpg/v1/fill/w_320,h_267,al_c,q_80,usm_0.66_1.00_0.01/e1c78c_cfd8fa1d16904a849e8f86d8e3bb3829.jpg");
   background-size: cover;
   height: 300px;
+
 }
 
 .restaurant-menus {
   @media screen and (min-width: $screen-large + 1) {
     background-image: url("https://static.wixstatic.com/media/e1c78c_823b4e996eb74e60b4505f1dc7b725f3.jpg/v1/fill/w_1863,h_828,al_c,q_85,usm_0.66_1.00_0.01/e1c78c_823b4e996eb74e60b4505f1dc7b725f3.jpg");
     background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
     height: 800px;
     width: 100%;
   }

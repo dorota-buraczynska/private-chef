@@ -1,7 +1,6 @@
 .chef-img {
   @media screen and (min-width: $screen-large + 1){
   width: 50%;
-  background-size: cover;
   background-position: 90%;
   height: 600px;
   display: inline-block;
@@ -9,11 +8,9 @@
   }
   @media screen and (min-width: $screen-medium + 1) and (max-width: $screen-large) {
     height: 330px;
-    background-size: cover;
   }
   @media screen and (min-width: $screen-small) and (max-width: $screen-medium) {
     height: 280px;
-    background-size: cover;
   }
   background-image: url("https://static.wixstatic.com/media/e1c78c_a5a164acd00a4ae7940be550e4915303.jpg/v1/fill/w_1066,h_682,al_c,q_85,usm_0.66_1.00_0.01/e1c78c_a5a164acd00a4ae7940be550e4915303.jpg");
   height: 200px;

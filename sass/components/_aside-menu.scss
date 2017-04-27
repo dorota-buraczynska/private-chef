@@ -1,5 +1,17 @@
 .dot-container {
   display: none;
+  list-style-type: none;
+
+  .dot {
+    width: 12px;
+    height: 12px;
+    border: 2px solid black;
+    border-radius: 50%;
+    display: inline-block;
+    font-weight: bold;
+    margin: 0 $common-padding 0 $common-padding/2;
+  }
+
   &.active {
     .dot {
       background-color: black;
@@ -7,7 +19,6 @@
     span {
       transform: translateX(0);
       opacity: 1;
-
     }
   }
   span {
@@ -23,79 +34,57 @@
     position: absolute;
     right: 61px;
   }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+aside {
+  display: block;
+  position: fixed;
+  right: 0;
+  z-index: 999;
 }
 
 aside {
   @media screen and (min-width: $screen-large + 1) {
-  display: block;
-  position: fixed;
-  right: 0;
-  top: 300px;
-  z-index: 999;
+    top: 300px;
 
-  .dot-container {
-    list-style-type: none;
-    display: block;
-    &.active,
-    &:hover {
-      .dot {
-        background-color: black;
-      }
-      span {
-        transform: translateX(0);
-        opacity: 1;
+    .dot-container {
+      display: block;
+      &.active,
+      &:hover {
+        .dot {
+          background-color: black;
+        }
+        span {
+          transform: translateX(0);
+          opacity: 1;
 
+        }
       }
     }
-    .dot {
-      width: 12px;
-      height: 12px;
-      border: 2px solid black;
-      border-radius: 50%;
-      display: inline-block;
-      font-weight: bold;
-      margin: 0 $common-padding 0 $common-padding/2;
-    }
-    a {
-      text-decoration: none;
-    }
-  }
   }
 }
 
 aside {
   @media screen and (min-width: $screen-medium + 1) and (max-width: $screen-large) {
-  display: block;
-  position: fixed;
-  right: 0;
-  top: 160px;
-  z-index: 999;
+    top: 160px;
 
-  .dot-container {
-    list-style-type: none;
-    display: block;
-    &.active {
-      .dot {
-        background-color: black;
-      }
-      span {
-        transform: translateX(0);
-        opacity: 1;
+    .dot-container {
+      display: block;
+      &.active {
+        .dot {
+          background-color: black;
+        }
+        span {
+          transform: translateX(0);
+          opacity: 1;
 
+        }
       }
     }
-    .dot {
-      width: 12px;
-      height: 12px;
-      border: 2px solid black;
-      border-radius: 50%;
-      display: inline-block;
-      font-weight: bold;
-      margin: 0 $common-padding 0 $common-padding/2;
-    }
-    a {
-      text-decoration: none;
-    }
-  }
   }
 }
+
