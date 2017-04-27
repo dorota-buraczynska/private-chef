@@ -10,6 +10,24 @@ $('.slider').slick({
     focusOnSelect: true,
     autoplay: true,
     arrows: false,
-    centerPadding: 0
+    centerPadding: 0,
+    responsive: [
+        {
+            breakpoint: 1176,
+            settings: {
+                variableWidth: true
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                variableWidth: true
+            }
+        }
+    ]
+
 });
 
+if ($('.dot-container').hasClass('active')) {
+    $('.dot-container p').css('display', 'inline-block');
+}
