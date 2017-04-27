@@ -1,0 +1,62 @@
+.review {
+  @media screen and (min-width: $screen-large + 1) {
+    background-image: url("https://static.wixstatic.com/media/e1c78c_6ae16d26be03488a93c6c91e40313df7.jpg/v1/fill/w_1863,h_740,al_c,q_85,usm_0.66_1.00_0.01/e1c78c_6ae16d26be03488a93c6c91e40313df7.jpg");
+    height: 740px;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  text-align: center;
+  font-size: 1.2rem;
+  padding: $common-padding/2;
+
+  & .container {
+    @media screen and (min-width: $screen-large + 1) {
+      padding-top: $common-padding*4;
+    }
+  }
+
+  p {
+    @media screen and (min-width: $screen-large + 1) {
+      font-size: 1rem;
+    }
+  }
+
+  h2, p {
+    font: {
+      family: $additional-font-family;
+      weight: normal;
+    }
+    margin: $common-padding/10;
+  }
+}
+
+img.round-face {
+  @media screen and (min-width: $screen-large + 1) {
+    margin: $common-padding;
+  }
+  border-radius: 50%;
+  padding: 10px;
+  border: 1px solid $active-color;
+  margin: $common-padding/2;
+}
+
+img.quotation {
+  @media screen and (min-width: $screen-large + 1) {
+    margin-bottom: $common-padding;
+  }
+  width: 50px;
+  margin: $common-padding;
+}
+
+.review-image {
+  @media screen and (min-width: $screen-large + 1) {
+    background-image: url("https://static.wixstatic.com/media/e1c78c_ad1edc17f4e041b79ef0aa996a3b4792.jpg/v1/fill/w_1863,h_666,al_c,q_85,usm_0.66_1.00_0.01/e1c78c_ad1edc17f4e041b79ef0aa996a3b4792.jpg");
+    height: 664px;
+  }
+  img {
+    @media screen and (min-width: $screen-large + 1) {
+      display: none;
+    }
+    width: 100%;
+  }
+}

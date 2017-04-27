@@ -1,0 +1,53 @@
+.slider {
+  @media screen and (min-width: $screen-large + 1) {
+    display: block;
+  }
+  display: none;
+}
+
+.small-screen-slide {
+  img {
+    width: 100%;
+  }
+}
+
+.bx-wrapper {
+  @media screen and (min-width: $screen-large + 1) {
+    border: none;
+  }
+}
+
+.small-screen-slide {
+  @media screen and (min-width: $screen-large + 1) {
+    display: none;
+  }
+}
+
+.slider {
+  @media screen and (min-width: $screen-large) and (max-width: $screen-x-large) {
+    display: block;
+    .slide {
+      img {
+        width: 420px;
+      }
+    }
+  }
+}
+
+.slider {
+  @media screen and (min-width: $screen-medium + 1) and (max-width: $screen-large) {
+    display: block;
+    .slide {
+      img {
+        width: 300px;
+      }
+    }
+  }
+}
+
+.small-screen-slide {
+  @media screen and (min-width: $screen-large) and (max-width: $screen-x-large), screen and (min-width: $screen-medium + 1) and (max-width: $screen-large) {
+    display: none;
+  }
+}
+

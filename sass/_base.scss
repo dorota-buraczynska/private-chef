@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+
+  font: {
+    family: $main-font-family;
+    size: 18px;
+  }
+  color: $text-color;
+  margin: 0;
+}
+
+.container {
+  @media screen and (min-width: $screen-medium + 1) and (max-width: $screen-large) {
+    margin-bottom: 0;
+  }
+  max-width: $container-width;
+  margin: auto;
+  margin-bottom: $common-padding/2;
+}
+
+.double-line {
+  border-top: 2px solid $text-color;
+  border-bottom: 2px solid $text-color;
+  height: 10px;
+  width: 40px;
+}
+
+h1,
+p {
+  color: $text-color;
+}
+
+h1 {
+  font-family: $additional-font-family;
+  font-weight: 100;
+}
+

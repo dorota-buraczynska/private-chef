@@ -1,0 +1,154 @@
+.invisible {
+  display: none;
+}
+
+.container-main-menu {
+  @media screen and (min-width: $screen-large + 1), screen and (min-width: $screen-medium + 1) and (max-width: $screen-large) {
+  margin-bottom: $common-padding;
+  }
+  margin-bottom: $common-padding/6;
+  margin-top: $common-padding;
+}
+
+header {
+  display: inline-block;
+
+  font: {
+    weight: bold;
+    style: italic;
+    size: 1.4rem;
+    family: $additional-font-family;
+  }
+
+  a {
+    text-decoration: none;
+    color: $text-color;
+  }
+
+  sup {
+    font-weight: normal;
+  }
+
+  .fa {
+    font-size: 0.7rem;
+  }
+}
+
+.icon-header {
+  display: inline-block;
+  padding-left: $common-padding/3;
+  vertical-align: bottom;
+  margin-bottom: -$common-padding/10;
+}
+
+.main-menu {
+  .menu {
+    @media screen and (min-width: $screen-large + 1), screen and (min-width: $screen-medium + 1) and (max-width: $screen-large){
+      display: inline-block;
+    }
+  }
+
+  ul {
+    @media screen and (min-width: $screen-large + 1), screen and (min-width: $screen-medium + 1) and (max-width: $screen-large) {
+      padding-left: $common-padding*2;
+    }
+
+    display: inline-block;
+    font-family: $additional-font-family;
+    margin-bottom: 0;
+
+    li {
+      display: inline-block;
+
+      a {
+        @media screen and (min-width: $screen-large + 1) {
+          padding: $common-padding/2;
+        }
+        @media screen and (min-width: $screen-medium + 1) and (max-width: $screen-large) {
+          padding: $common-padding/3;
+        }
+        text-decoration: none;
+        color: $text-color;
+        font-size: 1rem;
+        padding: $common-padding/10;
+
+        &:hover {
+          color: $active-color;
+        }
+      }
+    }
+  }
+}
+
+.main-menu {
+  .menu {
+    display: none;
+  }
+
+  button.menu {
+    @media screen and (min-width: $screen-large + 1) {
+      display: none;
+    }
+    @media screen and (min-width: $screen-medium + 1) and (max-width: $screen-large) {
+      margin-top: $common-padding/3;
+    }
+    display: inline-block;
+    float: right;
+    border: 1px solid $text-color;
+    border-radius: 3px;
+    background: none;
+    padding: $common-padding/3 $common-padding/2;
+    margin-right: $common-padding/2;
+  }
+
+  .small-menu {
+    @media screen and (min-width: $screen-large + 1) {
+      border-color: transparent;
+    }
+    text-align: right;
+    margin-right: $common-padding/2;
+    margin-top: $common-padding/2;
+    border-top: 1px solid $text-color;
+  }
+}
+
+.small-menu {
+  .small-menu--menu {
+    @media screen and (min-width: $screen-medium + 1) and (max-width: $screen-large) {
+      display: none;
+    }
+    display: inline-block;
+    padding-left: 0;
+    float: left;
+  }
+}
+
+.small-menu {
+  .small-menu--menu,
+  .small-menu--icons {
+    @media screen and (min-width: $screen-large + 1) {
+      display: none;
+    }
+  }
+}
+
+.icons {
+  @media screen and (min-width: $screen-large + 1) {
+    display: inline-block;
+    float: right;
+  }
+
+  display: none;
+  margin-top: $common-padding/3;
+
+  .icon {
+    display: inline-block;
+    font-size: 1.4rem;
+
+    a {
+      text-decoration: none;
+      color: $text-color;
+      padding: $common-padding/3;
+    }
+  }
+}

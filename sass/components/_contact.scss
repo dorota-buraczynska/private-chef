@@ -1,0 +1,149 @@
+.contact {
+  @media screen and (min-width: $screen-large + 1) {
+    font-family: $additional-font-family;
+    padding: $common-padding/2;
+    margin-top: $common-padding*4;
+    margin-bottom: $common-padding*4;
+  }
+  @media screen and (min-width: $screen-medium + 1) and (max-width: $screen-large) {
+    margin: $common-padding 0;
+  }
+  text-align: center;
+  padding: $common-padding/2;
+
+  .double-line {
+    margin: $common-padding auto;
+  }
+
+  h2 {
+    @media screen and (min-width: $screen-large + 1) {
+      font: {
+        size: 3.3rem;
+        weight: normal;
+      }
+      margin: 0;
+    }
+  }
+
+  p {
+    @media screen and (min-width: $screen-large + 1) {
+      font: {
+        size: 1rem;
+        family: $main-font-family;
+      }
+    }
+    font-size: 0.9rem;
+  }
+  h3 {
+    @media screen and (min-width: $screen-large + 1) {
+      font-weight: normal;
+      padding: 0 $common-padding*6;
+      margin-bottom: $common-padding;
+    }
+    @media screen and (min-width: $screen-medium + 1) and (max-width: $screen-large) {
+      padding: 0 $common-padding*3;
+    }
+    font-size: 1.1rem;
+    padding: 0 $common-padding*2;
+  }
+}
+
+#personal-details {
+  input,
+  textarea {
+    display: block;
+    margin: $common-padding/5 auto;
+    padding: $common-padding/10;
+  }
+
+  textarea {
+    padding-right: $common-padding;
+  }
+
+  button {
+    background-color: black;
+    border: none;
+    color: white;
+    font-size: 0.9rem;
+    padding: 6px;
+    margin-top: 0;
+  }
+
+  input[type=text],
+  input[type=email],
+  textarea {
+    width: 300px;
+  }
+}
+
+#personal-details {
+  @media screen and (min-width: $screen-large + 1) {
+    input,
+    textarea,
+    button {
+      display: block;
+      margin: $common-padding/5 auto;
+      padding: $common-padding/10;
+      font-size: 1.2rem;
+      border: 1px solid $text-color;
+    }
+
+    ::placeholder {
+      color: lightgrey;
+    }
+    textarea {
+      padding-right: $common-padding/5;
+    }
+
+    button {
+      background-color: black;
+      color: white;
+      font-size: 1rem;
+      padding: 6px;
+      margin-top: 0;
+      margin-left: calc(50% + 239px);
+    }
+
+    input[type=text],
+    input[type=email],
+    textarea {
+      width: 580px;
+    }
+  }
+}
+
+#personal-details {
+  @media screen and (min-width: $screen-medium + 1) and (max-width: $screen-large) {
+    input,
+    textarea {
+      ::placeholder {
+        color: lightgrey;
+      }
+    }
+
+    button {
+      background-color: black;
+      border: none;
+      color: white;
+      font-size: 0.9rem;
+      padding: 6px;
+      margin-top: 0;
+    }
+
+    input[type=text],
+    input[type=email],
+    textarea {
+      width: 580px;
+    }
+  }
+}
+
+#personal-details {
+  @media screen and (min-width: $screen-small) and (max-width: $screen-medium) {
+    input[type=text],
+    input[type=email],
+    textarea {
+      width: 340px;
+    }
+  }
+}
