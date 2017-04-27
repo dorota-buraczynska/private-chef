@@ -28,6 +28,3 @@ $('.slider').slick({
 
 });
 
-if ($('.dot-container').hasClass('active')) {
-    $('.dot-container p').css('display', 'inline-block');
-}

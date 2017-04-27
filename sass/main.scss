@@ -22,10 +22,30 @@ aside {
 }
 
 .dot-container {
-  &.active {
+  display: none;
+  &.active,
+  &:hover {
     .dot {
       background-color: black;
     }
+    span {
+      transform: translateX(0);
+      opacity: 1;
+
+    }
+  }
+  span {
+    display: inline-block;
+    font-weight: bold;
+    color: $text-color;
+    text-transform: uppercase;
+    margin-top: 3px;
+    transform: translateX(30px);
+    opacity: 0;
+    transition: opacity 0.2s, transform 1s;
+    font-size: 1rem;
+    position: absolute;
+    right: 61px;
   }
 }
 
@@ -406,6 +426,7 @@ footer {
 
     .dot-container {
       list-style-type: none;
+      display: block;
 
       .dot {
         width: 12px;
@@ -416,14 +437,6 @@ footer {
         font-weight: bold;
         margin: 0 $common-padding 0 $common-padding/2;
       }
-      p {
-        display: inline-block;
-        width: 60px;
-        font-size: 1rem;
-        margin: $common-padding/6;
-        text-align: right;
-      }
-
       a {
         text-decoration: none;
       }
@@ -755,6 +768,7 @@ footer {
 
     .dot-container {
       list-style-type: none;
+      display: block;
 
       .dot {
         width: 12px;
@@ -765,14 +779,6 @@ footer {
         font-weight: bold;
         margin: 0 $common-padding 0 $common-padding/2;
       }
-      p {
-        display: inline-block;
-        width: 60px;
-        font-size: 1rem;
-        margin: $common-padding/6;
-        text-align: right;
-      }
-
       a {
         text-decoration: none;
       }
