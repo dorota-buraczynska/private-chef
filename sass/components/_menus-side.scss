@@ -2,19 +2,21 @@
   background-image: url("https://static.wixstatic.com/media/e1c78c_e2f79a3c2b314f9da57e066a298065ab.jpg/v1/fill/w_980,h_639,al_t,q_85,usm_0.66_1.00_0.01/e1c78c_e2f79a3c2b314f9da57e066a298065ab.jpg");
   background-size: cover;
   height: 300px;
+  background-attachment: fixed;
+  background-position: center;
   @media screen and (min-width: $screen-medium + 1) and (max-width: $screen-large) {
     height: 500px;
   }
   @media screen and (min-width: $screen-large + 1) {
-    height: 700px;
-    background-attachment: fixed;
-    background-position: center;
+    height: 650px;
+
   }
 }
 
 .menu-side {
   text-align: center;
   border-bottom: 1px solid $active-color;
+  padding-bottom: $common-padding*2;
 
   h1 {
     font-size: 2.5rem;
@@ -51,6 +53,17 @@
       size: 1.0rem;
       weight: 600;
     }
-    margin:$common-padding $common-padding*2;
+    margin: $common-padding $common-padding*2;
+    @media screen and (min-width: $screen-large + 1) {
+      margin: $common-padding $common-padding/2;
+    }
+  }
+}
+
+.dish-wrapper {
+  @media screen and (min-width: $screen-large + 1) {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
   }
 }
