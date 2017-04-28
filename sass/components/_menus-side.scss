@@ -1,0 +1,56 @@
+.main-photo {
+  background-image: url("https://static.wixstatic.com/media/e1c78c_e2f79a3c2b314f9da57e066a298065ab.jpg/v1/fill/w_980,h_639,al_t,q_85,usm_0.66_1.00_0.01/e1c78c_e2f79a3c2b314f9da57e066a298065ab.jpg");
+  background-size: cover;
+  height: 300px;
+  @media screen and (min-width: $screen-medium + 1) and (max-width: $screen-large) {
+    height: 500px;
+  }
+  @media screen and (min-width: $screen-large + 1) {
+    height: 700px;
+    background-attachment: fixed;
+    background-position: center;
+  }
+}
+
+.menu-side {
+  text-align: center;
+  border-bottom: 1px solid $active-color;
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    text-transform: uppercase;
+    margin-top: $common-padding*3;
+
+    font: {
+      family: $additional-font-family;
+      size: 1.3rem;
+    }
+  }
+
+  p {
+    margin: $common-padding/2 $common-padding*2;
+    font: {
+      style: italic;
+      size: 0.9rem;
+    }
+  }
+
+  .line {
+    width: 30px;
+    height: 30px;
+    border-top: 2px solid $active-color;
+    margin: auto;
+  }
+  .dish {
+    text-transform: uppercase;
+    color: black;
+    font: {
+      size: 1.0rem;
+      weight: 600;
+    }
+    margin:$common-padding $common-padding*2;
+  }
+}
