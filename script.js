@@ -29,10 +29,39 @@ $('.slider').slick({
 });
 
 var parallax = function () {
-  var scrolled = $(window).scrollTop();
-  $('video').css('top', (scrolled * .5) + 'px');
+    var scrolled = $(window).scrollTop();
+    $('video').css('top', (scrolled * .5) + 'px');
 };
 
 $(window).scroll(function (e) {
     parallax();
 });
+
+var scrollTo = function (elementId) {
+    var position = $(elementId).offset().top;
+    var menuHeight = $('.container-main-menu').height();
+
+    $('html, body').animate({scrollTop: (position - menuHeight)}, 1500);
+};
+
+var scrollToTop = function () {
+    $('html, body').animate({scrollTop: 0}, 1500);
+};
+
+$('.menu  a, .small-menu--menu a, .nav a').on('click', function (elementId) {
+    var test = $(this).attr('href');
+    var elementId = $(this).attr('href');
+    $(this)
+        .addClass('.active-main-menu')
+        .siblings().removeClass('.active-main-menu');
+    if ($(this).attr('href') == '#home') {
+       scrollToTop();
+    } else {
+        scrollTo(elementId);
+    }
+});
+
+$('.back-to-top').on('click', function () {
+    scrollToTop();
+});
+

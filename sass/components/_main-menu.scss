@@ -2,6 +2,10 @@
   display: none;
 }
 
+.active-main-menu {
+  color: $active-color;
+}
+
 .container-main-menu {
   @media screen and (min-width: $screen-large + 1), screen and (min-width: $screen-medium + 1) and (max-width: $screen-large) {
   margin-bottom: $common-padding;
@@ -105,6 +109,9 @@ header {
         padding: $common-padding/10;
 
         &:hover {
+          color: $active-color;
+        }
+        &.active-main-menu {
           color: $active-color;
         }
       }

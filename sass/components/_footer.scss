@@ -23,9 +23,14 @@ footer {
     margin: $common-padding 0 $common-padding/2 0;
   }
 
-  a {
-    text-decoration: none;
-    color: $text-color;
-    font-weight: 600;
+  .back-to-top {
+    width: 200px;
+    margin: auto;
+
+    a {
+      text-decoration: none;
+      color: $text-color;
+      font-weight: 600;
+    }
   }
 }
