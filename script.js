@@ -25,16 +25,70 @@ $('.slider').slick({
             }
         }
     ]
-
 });
+var $slide = $('.bg-slide');
+var $window = $(window);
+var screenHeight;
+
+
+var setBackgroundSize = function () {
+    screenHeight = $window.height();
+    $slide.each(function () {
+        var imgWidth = $(this).data('image-width');
+        var imgHeight = $(this).data('image-height');
+        var elementWidth = $(this).width();
+        var imgRatio = imgWidth / imgHeight;
+        var screenRatio = elementWidth / screenHeight;
+        var backgroundSizeHeight;
+        var backgroundSizeWidth;
+        var elementPosition = $(this).offset().top;
+        var elementHeight = $(this).outerHeight();
+
+        $(this).data('topPosition', elementPosition);
+        $(this).data('elementHeight', elementHeight);
+
+        if (imgRatio <= screenRatio) {
+            backgroundSizeHeight = (imgHeight * elementWidth) / imgWidth;
+            backgroundSizeWidth = elementWidth;
+        } else {
+            backgroundSizeWidth = (imgWidth * screenHeight) / imgHeight;
+            backgroundSizeHeight = screenHeight;
+        }
+
+        $(this).css('background-size', backgroundSizeWidth + 'px ' + backgroundSizeHeight + 'px');
+
+    });
+};
+
+setBackgroundSize();
+
+$(window).on('resize', function () {
+    setBackgroundSize();
+    scrollHandler();
+});
+
+var scrollHandler = function (event) {
+    $slide.each(function () {
+        var scroll = $window.scrollTop();
+        var elementPosition = $(this).data('topPosition');
+        var elementHeight = $(this).data('elementHeight');
+        var relativeScroll = scroll - (elementPosition - screenHeight);
+
+        if (elementPosition < (scroll + screenHeight) &&
+            (elementPosition + elementHeight) > scroll) {
+            $(this).css('background-position-y', relativeScroll);
+        }
+    });
+};
 
 var parallax = function () {
     var scrolled = $(window).scrollTop();
     $('video').css('top', (scrolled * .5) + 'px');
 };
 
-$(window).scroll(function (e) {
+$(window).on('scroll', function (e) {
     parallax();
+    scrollHandler();
 });
 
 var scrollTo = function (elementId) {

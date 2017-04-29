@@ -289,18 +289,12 @@ img.quotation {
   background-size: cover; }
   @media screen and (min-width: 769px) {
     .review-image {
-      background-image: url("https://static.wixstatic.com/media/e1c78c_ad1edc17f4e041b79ef0aa996a3b4792.jpg/v1/fill/w_1863,h_666,al_c,q_85,usm_0.66_1.00_0.01/e1c78c_ad1edc17f4e041b79ef0aa996a3b4792.jpg");
-      height: 664px;
-      background-position: center;
-      background-size: cover;
-      background-attachment: fixed; } }
+      background-image: url("https://static.wixstatic.com/media/e1c78c_ad1edc17f4e041b79ef0aa996a3b4792.jpg/v1/fill/w_1863,h_713,al_c,q_85,usm_0.66_1.00_0.01/e1c78c_ad1edc17f4e041b79ef0aa996a3b4792.jpg");
+      height: 500px; } }
   @media screen and (min-width: 601px) and (max-width: 768px) {
     .review-image {
       background-image: url("https://static.wixstatic.com/media/e1c78c_ad1edc17f4e041b79ef0aa996a3b4792.jpg/v1/fill/w_1863,h_666,al_c,q_85,usm_0.66_1.00_0.01/e1c78c_ad1edc17f4e041b79ef0aa996a3b4792.jpg");
       height: 500px;
-      background-attachment: fixed;
-      background-position: center;
-      background-repeat: no-repeat;
       overflow: hidden; } }
 
 .chef-img {
@@ -400,9 +394,7 @@ img.quotation {
       background-image: url("https://static.wixstatic.com/media/e1c78c_cfd8fa1d16904a849e8f86d8e3bb3829.jpg/v1/fill/w_1863,h_867,al_c,q_85,usm_0.66_1.00_0.01/e1c78c_cfd8fa1d16904a849e8f86d8e3bb3829.jpg");
       overflow: hidden;
       padding-top: 120px;
-      height: 867px;
-      background-attachment: fixed;
-      background-size: cover;
+      height: 760px;
       background-position: center; } }
   @media screen and (min-width: 769px) {
     .second-menu .container {
@@ -472,10 +464,9 @@ img.quotation {
   .restaurant-menus {
     background-image: url("https://static.wixstatic.com/media/e1c78c_823b4e996eb74e60b4505f1dc7b725f3.jpg/v1/fill/w_1863,h_828,al_c,q_85,usm_0.66_1.00_0.01/e1c78c_823b4e996eb74e60b4505f1dc7b725f3.jpg");
     background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 800px;
+    overflow: hidden;
+    position: relative;
+    height: 750px;
     width: 100%; } }
 
 .title-container {
@@ -643,9 +634,7 @@ footer {
 .main-photo {
   background-image: url("https://static.wixstatic.com/media/e1c78c_e2f79a3c2b314f9da57e066a298065ab.jpg/v1/fill/w_980,h_639,al_t,q_85,usm_0.66_1.00_0.01/e1c78c_e2f79a3c2b314f9da57e066a298065ab.jpg");
   background-size: cover;
-  height: 300px;
-  background-attachment: fixed;
-  background-position: center; }
+  height: 300px; }
   @media screen and (min-width: 601px) and (max-width: 768px) {
     .main-photo {
       height: 500px; } }
