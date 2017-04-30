@@ -55,7 +55,11 @@ var setBackgroundSize = function () {
             backgroundSizeHeight = screenHeight;
         }
 
-        $(this).css('background-size', backgroundSizeWidth + 'px ' + backgroundSizeHeight + 'px');
+        $(this).data('backgroundHeight', backgroundSizeHeight);
+
+        $(this).find('.background')
+            .css('background-size', backgroundSizeWidth + 'px ' + backgroundSizeHeight + 'px')
+            .css('height', backgroundSizeHeight);
 
     });
 };
@@ -67,16 +71,24 @@ $(window).on('resize', function () {
     scrollHandler();
 });
 
+window.requestAnimationFrame = window.requestAnimationFrame
+    || window.mozRequestAnimationFrame
+    || window.webkitRequestAnimationFrame
+    || window.msRequestAnimationFrame
+    || function(f){setTimeout(f, 1000/60)};
+
 var scrollHandler = function (event) {
     $slide.each(function () {
         var scroll = $window.scrollTop();
         var elementPosition = $(this).data('topPosition');
         var elementHeight = $(this).data('elementHeight');
-        var relativeScroll = scroll - (elementPosition - screenHeight);
+        var relativeScroll = scroll - (elementPosition - screenHeight) - $(this).data('backgroundHeight');
 
         if (elementPosition < (scroll + screenHeight) &&
             (elementPosition + elementHeight) > scroll) {
-            $(this).css('background-position-y', relativeScroll);
+            $(this).find('.background').css('transform', 'translateY(' + relativeScroll + 'px)');
+            // alternative selector type: $('.background', this);
+
         }
     });
 };
@@ -88,7 +100,8 @@ var parallax = function () {
 
 $(window).on('scroll', function (e) {
     parallax();
-    scrollHandler();
+    // scrollHandler();
+    requestAnimationFrame(scrollHandler);
 });
 
 var scrollTo = function (elementId) {
