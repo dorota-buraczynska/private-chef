@@ -6,7 +6,7 @@
 
   .title {
     @media screen and (min-width: $screen-large + 1) {
-    font-size: 2.5rem;
+      font-size: 2.5rem;
     }
     @media screen and (min-width: $screen-medium + 1) and (max-width: $screen-large) {
       font-size: 1.8rem;
@@ -45,8 +45,29 @@
   overflow: hidden;
 
   video {
-    width: 100%;
-    display: block;
-    position: relative;
+    display: none;
+    @media screen and (min-width: $screen-medium + 1) and (max-width: $screen-large) {
+      width: 100%;
+      display: block;
+      position: relative;
+    }
+    @media screen and (min-width: $screen-large + 1) {
+      width: 100%;
+      display: block;
+      position: relative;
+    }
+  }
+}
+
+.video-img {
+  background-image: url("https://static.wixstatic.com/media/e1c78c_a319e41376c84e2884de1b518bc0e79ff000.jpg/v1/fill/w_868,h_720,al_c,q_85/e1c78c_a319e41376c84e2884de1b518bc0e79ff000.webp");
+  height: 300px;
+  width: 100%;
+  background-size: cover;
+  @media screen and (min-width: $screen-medium + 1) and (max-width: $screen-large) {
+    display: none;
+  }
+  @media screen and (min-width: $screen-large + 1) {
+    display: none;
   }
 }

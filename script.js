@@ -141,6 +141,7 @@ var showMenusSide = function () {
     $('.second-menu').hide();
     $('#reviews').hide();
     $('.review-image').hide();
+    $('.review-image-small-screen').hide();
     $('#contact').hide();
     $('#photos').hide();
     $('.small-screen-slide').hide();
@@ -148,21 +149,48 @@ var showMenusSide = function () {
 };
 
 var showIndexPage = function () {
-    $('#aside-menu').show();
-    $('#home').show();
-    $('#about').show();
-    $('#menus').show();
-    $('.second-menu').show();
-    $('#reviews').show();
-    $('.review-image').show();
-    $('#contact').show();
-    $('.menu-side-container').hide();
+
     if ($(window).width() <= 600) {
+        $('.menu-side-container').hide();
         $('.small-screen-slide').show();
         $('#photos').hide();
-    } else {
+        $('.review-image-small-screen').show();
+        $('#home').show();
+        $('#about').show();
+        $('#menus').show();
+        $('.second-menu').show();
+        $('.review-image').hide();
+        $('#reviews').show();
+        $('#contact').show();
+    } else if ($(window).width() > 600 &&
+    $(window).width() <= 768) {
+        $('.menu-side-container').hide();
+        $('.review-image-small-screen').show();
+        $('.review-image').hide();
+        $('.small-screen-slide').hide();
+        $('#aside-menu').show();
         $('#photos').show();
+        $('#home').show();
+        $('#about').show();
+        $('#menus').show();
+        $('.second-menu').show();
+        $('#reviews').show();
+        $('#contact').show();
+    } else {
+        $('.review-image-small-screen').hide();
+        $('.review-image').show();
+        $('#aside-menu').show();
+        $('#home').show();
+        $('#about').show();
+        $('#menus').show();
+        $('.second-menu').show();
+        $('#reviews').show();
+        $('#contact').show();
+        $('.menu-side-container').hide();
+        $('#photos').show();
+
     }
+
 };
 
 $('.menu a[href="#menus"], .small-menu--menu a[href="#menus"], .menus a[href="#menus"], .second-menu-information button').on('click', function () {
