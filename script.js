@@ -99,8 +99,7 @@ var parallax = function () {
 };
 
 $(window).on('scroll', function (e) {
-    parallax();
-    // scrollHandler();
+    requestAnimationFrame(parallax);
     requestAnimationFrame(scrollHandler);
 });
 
